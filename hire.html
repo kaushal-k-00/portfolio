@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hire Me</title>
+    <style>
+        #hireForm {
+            width: 300px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+        }
+
+        #hireForm input, #hireForm select, #hireForm textarea, #hireForm button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        #hireForm button {
+            background-color: #ff3399;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #hireForm button:hover {
+            background-color: #cc0077;
+        }
+    </style>
+</head>
+<body>
+
+<div id="hireForm">
+    <h3>Your Email</h3>
+    <input type="email" id="senderEmail" placeholder="Enter your email" required>
+
+    <h3>Select Service</h3>
+    <select id="service">
+        <option value="Web Development">Web Development</option>
+        <option value="App Development">App Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Consultation">Consultation</option>
+    </select>
+
+    <h3>Your Message</h3>
+    <textarea id="message" placeholder="Write details..." rows="4"></textarea>
+
+    <br>
+    <button id="sendBtn">Send</button>
+</div>
+
+<script src="hire.js"></script>
+</body>
+</html>
